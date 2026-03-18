@@ -1,0 +1,178 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(255, 102, 0);
+    color: white;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+header p {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+header ul {
+    float: right;
+    list-style-type: none; 
+    margin: 20px;
+    font-size: 18px;
+}
+
+header ul li {
+    float: left; 
+    margin-left: 30px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#quien-soy {
+    padding: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    overflow: hidden;
+    background-color: white;
+    text-align: justify;
+    font-size: 30px;
+    color: #555;
+    line-height: 50px;
+}
+
+.quiensoyimg img {
+    height: auto;
+    float: left;
+    width: 40%;
+    padding-left: 100px;
+}
+
+.quiensoytext {
+    float: right;
+    width: 50%;
+    padding-top: 47px;
+}
+
+.quiensoytext h1 {
+    color: #f95c3c; 
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.quiensoytext button {
+    background-color: #f95c3c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.middle{
+    text-align: center;
+    background-color:rgb(255, 102, 0);
+    overflow: hidden;
+    
+}
+.middletext p{
+    text-align: center;
+    padding-top: 20px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.middletext{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.qsimg2{
+    padding-top: 20px;
+}
+
+.qsimg2 img{
+    width: 300px;
+    height: 300px;
+    text-align: center; 
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#proyectos {
+    padding: 80px 5%;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+#proyectos h1 {
+    font-size: 2.8rem;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.cards {
+    overflow: hidden;
+}
+
+.card {
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+    border: 1px solid #e0e0e0;
+    padding-bottom: 25px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid #e0e0e0;
+    object-fit: cover;
+}
+
+.card h2 {
+    color: #555;
+    margin: 20px 0 10px 0;
+}
+
+.card p {
+    color: #777;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 0 15px;
+    margin-bottom: 25px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.card .boton {
+    background-color: #f95c3c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+footer {
+    background-color: rgb(255, 102, 0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-align: right;
+}

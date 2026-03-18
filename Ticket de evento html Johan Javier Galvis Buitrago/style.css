@@ -1,0 +1,63 @@
+
+.boleto-completo{
+    border: 2px solid black;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    width: 600px;
+    overflow: hidden;
+    height: 200px;
+    font-family: 'Courier New';
+    padding: 43px;
+    padding-right: 10px;
+    margin: auto;
+    margin-top: 300px;
+    text-align: left;
+    border-radius: 10px;
+}
+.ticket{
+    float: left;
+    width: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: -50px;
+    margin-left: -30px;
+    
+}
+p{
+    font-size: 19px;
+    font-weight: bold;
+}
+.logo{
+    height: auto;
+    width: 40%;
+    float: right;
+    margin-top: -200px;
+    margin-right: -90px;
+    
+}
+.barcode{
+    height: 100px;
+    width: 60%;
+    margin: -6px;
+}
+
+.lado-derecho{
+    float: right;
+    width: 110px;     
+    height: 280px;
+    border-left: 2px dashed black; 
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: -40px;
+    writing-mode: vertical-rl; 
+    text-orientation: mixed;
+    font-size: 22px;
+    
+}
+.info{
+    line-height: 30px;
+    font-weight: bold;
+}
+.place{
+    width: 340px;
+}
