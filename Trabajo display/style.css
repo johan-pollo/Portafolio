@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    background-color: #d1d1d1; 
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+.body {
+    background-color: white;
+    width: 800px;
+    min-height: 900px;
+    position: relative;
+}
+
+
+header {
+    background-color: #2b2d35; 
+    color: white;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 8px solid #eb2d4f; 
+}
+
+header img{
+    width: 60px;
+    height: 60px;
+}
+
+header h1{
+    margin-left: auto;
+}
+
+.logo{
+    padding-left: 15px;
+}
+
+.logo h3, p{
+    margin: 0;
+}
+
+header h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #eb2d4f;
+}
+
+.dirigida {
+    background-color: #2b2d35; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 20px 5px 35px;
+}
+
+.dirigida.a {
+    display: grid;
+    width: 30%;
+    gap: 0;
+}
+
+.dirigida.a h3 {
+    color: #eb2d4f;
+    font-size: 16px;
+    margin: 16px 0 0 0;
+}
+
+.dirigida.a h4{
+    margin: 10px 0;
+}
+
+.dirigida.a p{
+    margin: 0 0 16px 0;
+}
+
+.tabla.factura{
+    display: flex;
+    align-items: center;
+}
+.tabla.factura table td {
+    padding: 2px 15px;
+}
+
+.main.table {
+    border-spacing: 0;
+    padding: 0 30px 20px 30px;
+}
+
+.main.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main.table thead {
+    background-color: #f2f4f3;
+    width: 100%;
+    box-shadow: 0 0 0 30px #f2f4f3; 
+    clip-path: inset(0 -30px);
+}
+
+.main.table thead td:nth-child(1){
+    text-align: right;
+    padding-left: 0;
+}
+
+.main.table tr td:nth-child(1){
+    text-align: right;
+}
+
+.main.table tr td:nth-child(4){
+    text-align: center;
+}
+
+.main.table td {
+    padding: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.main.table td.tdempty{
+    padding: 30px;
+}
+
+.main.table thead td:last-child {
+    padding-right: 0;
+}
+
+body > .body > p {
+    padding: 0 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info.pago {
+    display: grid;
+    padding: 0 40px;
+}
+
+.info.pago table {
+    font-size: 13px;
+    color: #444;
+}
+
+.titulo.tabla {
+    font-size: 18px;
+}
+
+.gracias{
+    grid-area: 1 / 1;
+    margin: 10px 0px 10px 0px;
+}
+
+.info.pago td {
+    padding: 3px 0;
+}
+
+hr {
+    margin: 20px 40px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 40px;
+}
+
+.total table {
+    width: 200px;
+    border-collapse: collapse;
+}
+
+.total tr:last-child td:nth-child(2) {
+    padding-top: 17px;    /* Más espacio superior */
+    border-top: 2px solid black; /* Borde negro superior */
+    text-align: right;
+    font-size: 20px;
+}
+
+.total tr:last-child td:nth-child(1) {
+    text-align: left;
+    padding-top: 17px;    /* Más espacio superior */
+    border-top: 2px solid black; /* Borde negro superior */
+    font-size: 20px;
+}
+
+.total tr:nth-child(2) td:nth-child(2) {
+    padding-bottom: 17px;    /* Más espacio superior */
+}
+
+.total tr:nth-child(2) td:nth-child(1) {
+    padding-bottom: 17px;    /* Más espacio superior */
+}
+
+.total td {
+    padding: 5px 10px;
+    text-align: right;
+}
+
+.total td:first-child {
+    text-align: left;
+}
+
+.terminos.condiciones {
+    padding: 40px;
+    width: 60%; 
+}
+
+.terminos h3 {
+    font-size: 14px;
+    margin: 0px;
+    width: 160px;
+    line-height: 40px;
+    border-top: 1px solid black;
+}
+
+.terminos p {
+    font-size: 11px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.firma {
+    text-align: right;
+    padding: 0 60px 40px 0;
+    margin-top: -60px;
+
+}
+
+.firma p {
+    display: inline-block;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    width: 180px;
+    text-align: center;
+    font-size: 14px;
+}
+.contenedor-pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.info.pago, .total {
+    flex: 1;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer{
+    height: 15px;
+    background-color: #2b2d35;
+}
