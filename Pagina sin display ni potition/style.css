@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -75,7 +76,7 @@ header ul li:nth-child(3) a {
 .quiensoytext {
     float: right;
     width: 45%;
-    padding-top: 120px;
+    padding-top: 60px;
 }
 
 .quiensoytext h1 {
