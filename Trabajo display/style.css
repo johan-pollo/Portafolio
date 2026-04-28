@@ -264,89 +264,107 @@ footer{
     background-color: #2b2d35;
 }
 
-@media (max-width: 768px) {
-    body {
+@media (max-width: 770px) {
+    body { 
         padding: 10px; 
     }
 
     header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         padding: 20px 15px;
+        gap: 12px;
+    }
+
+    header img { 
+        order: 2; 
+    }
+
+    .logo { 
+        order: 2; padding-left: 10px; 
     }
 
     header h1 {
-        font-size: 22px;
-    }
-
-    header img {
-        width: 45px;
-        height: 45px;
-    }
-
-    .logo h3 {
-        font-size: 16px;
-    }
-
-    .logo p {
-        font-size: 12px;
+        margin-left: 0;
+        order: 1; 
     }
 
     .dirigida {
+        flex-direction: column;
+        align-items: center;
         padding: 10px 15px;
     }
 
-    .dirigida.a h3 {
-        font-size: 14px;
+    .dirigida.a {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-self: center;
     }
 
-    .dirigida.a h4, .dirigida.a p {
-        font-size: 12px;
+    .tabla.factura {
+        width: 100%;
+        justify-content: flex-end;
+        padding: 0 0 10px 0;
     }
 
-    .tabla.factura table td {
-        padding: 2px 5px;
-        font-size: 12px;
+    .tabla.factura table td { 
+        padding: 2px 5px; 
     }
 
-    .main.table {
-        padding: 0 15px 15px 15px;
+    
+    .main.table { 
+        padding: 0 15px 15px 15px; 
     }
 
-    .info.pago {
-        padding: 0 15px;
-    }
-
-    .info.pago table {
-        font-size: 11px;
+    .contenedor-pie {
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     .total {
-        padding: 0 15px;
+        padding: 10px 15px;
+        width: 100%;
+        justify-content: flex-end;
+        order: 1;
     }
 
-    .total table {
-        max-width: 160px; 
+    .info.pago {
+        padding: 10px 15px;
+        width: 100%;
+        justify-items: center;
+        text-align: center;
+        order: 2;
     }
 
-    .total tr:last-child td:nth-child(1),
-    .total tr:last-child td:nth-child(2) {
-        font-size: 16px;
+    .info.pago table { 
+        text-align: left; 
     }
 
+    .info.pago table td:first-child {
+        padding-right: 20px;
+    }
+
+    .contenedor-terminos-firma {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .terminos.condiciones {
+        width: 80%;
         padding: 20px 15px;
-        width: 55%; 
+        text-align: center;
+        padding-bottom: 30px;
     }
-
+    .terminos h3 {
+        border-top: none;
+        width: auto;
+        display: inline-block;
+    }
     .firma {
-        padding: 0 15px 20px 0;
-    }
-    .terminos.condiciones {
-        padding: 20px 15px 10px 15px;
-        width: 100%; 
-    }
-
-    .firma {
-        padding: 0 15px 20px 0;
-        margin-top: 20px; 
+        text-align: center;
+        padding: 0 0 20px 0;
+        margin-top: 20px;
     }
 }
