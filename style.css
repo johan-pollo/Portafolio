@@ -1,10 +1,9 @@
-
 body {
     background-color: #191d20;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .hero {
@@ -41,7 +40,7 @@ h2{
 
 .portafolioinfo{
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
     margin: auto;
     background: linear-gradient(rgb(82, 7, 82),rgb(134, 41, 134));
@@ -93,7 +92,7 @@ h1 {
 
 a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .tarjeta {
