@@ -3,30 +3,37 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Georgia', 'Times New Roman', serif;
   color: #3b2a20;
   background: #f5efe6;
   line-height: 1.6;
 }
+
 img {
   display: block;
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 ul {
   list-style: none;
 }
+
 .contenedor {
   max-width: 1350px;
   margin: 0 auto;
 }
+
 .btn {
   display: inline-block;
   padding: 12px 26px;
@@ -37,26 +44,32 @@ ul {
   font-family: 'Helvetica Neue', Arial, sans-serif;
   letter-spacing: .3px;
 }
+
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, .15);
 }
+
 .btn-pequeno {
   padding: 8px 18px;
   font-size: 13px;
 }
+
 .btn-claro {
   background: #faf6f0;
   color: #3b2a20;
 }
+
 .btn-primario {
   background: #c8862f;
   color: #fff;
 }
+
 .btn-oscuro {
   background: #4b2e1f;
   color: #fff;
 }
+
 .navegacion-superior {
   background: #faf6f0;
   border-bottom: 1px solid #e5dccd;
@@ -65,6 +78,7 @@ ul {
   z-index: 50;
   box-shadow: 0 2px 10px rgba(0, 0, 0, .04);
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -72,6 +86,7 @@ ul {
   padding-top: 26px;
   padding-bottom: 26px;
 }
+
 .logotipo {
   font-family: 'Georgia', serif;
   font-size: 30px;
@@ -79,6 +94,7 @@ ul {
   letter-spacing: .5px;
   color: #4b2e1f;
 }
+
 .enlaces-nav {
   display: flex;
   gap: 32px;
@@ -87,6 +103,7 @@ ul {
   font-weight: 500;
   margin-left: auto;
 }
+
 .enlaces-nav a {
   color: #4b2e1f;
   opacity: .85;
@@ -96,10 +113,12 @@ ul {
   font-size: 20px;
   font-weight: bold;
 }
+
 .enlaces-nav a:hover {
   opacity: 1;
   border-bottom-color: #c8862f;
 }
+
 .pantalla-inicio {
   position: relative;
   min-height: 95vh;
@@ -110,36 +129,42 @@ ul {
   display: flex;
   flex-direction: column;
 }
+
 .contenido-inicio {
   max-width: 900px;
   padding: 40px var(--margen-izquierdo, 4%);
-  /* El margen izquierdo ahora se adapta dinámicamente según el tamaño de pantalla */
-  margin-left: clamp(20px, 12vw, 200px); 
+
+  margin-left: clamp(20px, 12vw, 200px);
   margin-top: clamp(60px, 10vh, 149px);
 }
+
 .contenido-inicio h1 {
-  font-size: clamp(40px, 7vw, 90px); /* Escala fluidamente desde móvil hasta escritorio */
+  font-size: clamp(40px, 7vw, 90px);
   line-height: 1.05;
   font-weight: 700;
   margin-bottom: 22px;
   text-shadow: 0 2px 18px rgba(0, 0, 0, .35);
 }
+
 .contenido-inicio p {
   max-width: 600px;
   font-size: clamp(16px, 1.8vw, 18px);
   margin-bottom: 32px;
   opacity: .95;
 }
+
 .botones-inicio {
   display: flex;
-  flex-wrap: wrap; /* Evita que los botones se desborden si se achica el espacio */
+  flex-wrap: wrap;
   gap: 14px;
 }
+
 .caracteristicas {
   background: #faf6f0;
   padding: clamp(50px, 8vw, 90px) 20px;
   text-align: center;
 }
+
 .titulo-seccion {
   font-size: clamp(28px, 4vw, 36px);
   margin-bottom: 30px;
@@ -147,16 +172,19 @@ ul {
   position: relative;
   display: inline-block;
 }
+
 .rejilla-caracteristicas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   position: relative;
 }
+
 .caracteristica {
   padding: 20px;
   position: relative;
 }
+
 .caracteristica:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -166,6 +194,7 @@ ul {
   height: 50%;
   background-color: #d3af9a;
 }
+
 .icono-caracteristica {
   width: clamp(80px, 10vw, 110px);
   height: clamp(80px, 10vw, 110px);
@@ -175,52 +204,62 @@ ul {
   border: 3px solid #c8862f;
   box-shadow: 0 6px 16px rgba(75, 46, 31, .18);
 }
+
 .icono-caracteristica img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .caracteristica h3 {
   font-size: clamp(22px, 2.5vw, 32px);
   margin-bottom: 10px;
   color: #4b2e1f;
   font-weight: bold;
 }
+
 .caracteristica p {
   font-size: 15px;
   color: #6b5546;
 }
+
 .dividido {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   min-height: 420px;
-  
+
 }
+
 .dividido-oscuro {
   background: #4b2e1f;
   color: #f5efe6;
   display: grid;
   grid-template-columns: 1.3fr 0.7fr;
   align-items: center;
-  
+
 }
+
 .dividido-interno {
   padding: 60px 40px;
   padding-left: clamp(20px, 10vw, 148px);
 }
+
 .dividido-interno h2 {
   font-size: clamp(26px, 3vw, 34px);
   margin-bottom: 18px;
 }
+
 .dividido-interno p {
   margin-bottom: 26px;
   opacity: .9;
 }
+
 .imagen-dividida {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .dividido-claro {
   background: #e9dccb;
   padding: 70px 40px;
@@ -230,28 +269,34 @@ ul {
   text-align: center;
   align-items: center;
 }
+
 .dividido-claro h2 {
   font-size: clamp(24px, 3vw, 32px);
   margin-bottom: 18px;
   color: #4b2e1f;
 }
+
 .horas-grandes {
   font-size: 22px;
   margin-bottom: 16px;
   color: #3b2a20;
 }
+
 .horas-grandes strong {
   font-size: 30px;
   color: #c8862f;
 }
+
 .dividido-claro p {
   margin-bottom: 26px;
   color: #5e4636;
   max-width: 85%;
 }
+
 .dividido-claro .btn {
   text-align: center;
 }
+
 .visita {
   padding: clamp(50px, 4vw, 90px) 24px;
   display: grid;
@@ -260,6 +305,7 @@ ul {
   max-width: 1420px;
   margin: 0 auto;
 }
+
 .subtitulo-destacado {
   display: inline-block;
   font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -269,37 +315,44 @@ ul {
   margin-bottom: 4px;
   letter-spacing: 1px;
 }
+
 .visita-izquierda h2 {
   font-size: clamp(32px, 4.5vw, 52px);
   line-height: 1.1;
   margin-bottom: 18px;
   color: #4b2e1f;
 }
+
 .visita-izquierda p {
   margin-bottom: 28px;
   color: #6b5546;
   max-width: 427px;
 }
+
 .botones-visita {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
 }
+
 .visita-derecha h3 {
   font-size: 28px;
   margin-bottom: 24px;
   color: #4b2e1f;
   text-align: center;
 }
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(12px, 2vw, 28px);
 }
+
 .galeria figure {
   margin: 0;
   text-align: center;
 }
+
 .galeria img {
   width: 100%;
   aspect-ratio: 1;
@@ -308,15 +361,18 @@ ul {
   transition: transform 0.3s ease;
   display: block;
 }
+
 .galeria img:hover {
   transform: scale(1.04);
 }
+
 .galeria figcaption {
   margin-top: 10px;
   font-size: 14px;
   color: #6b5546;
   font-style: italic;
 }
+
 .banner {
   background:
     linear-gradient(rgba(30, 18, 10, .55), rgba(30, 18, 10, .55)),
@@ -324,18 +380,22 @@ ul {
   padding: clamp(60px, 8vw, 110px) clamp(20px, 10vw, 148px);
   color: #fff;
 }
+
 .banner h2 {
   font-size: clamp(28px, 4vw, 44px);
   margin-bottom: 14px;
 }
+
 .banner p {
   font-size: 18px;
   max-width: 423px;
   opacity: .95;
 }
+
 .banner-capa {
   margin-left: 0;
 }
+
 .testimonios {
   background: #f5efe6;
   padding: 70px 24px;
@@ -346,6 +406,7 @@ ul {
   margin: 0 auto;
   justify-items: center;
 }
+
 .testimonio {
   display: flex;
   gap: 16px;
@@ -353,6 +414,7 @@ ul {
   position: relative;
   padding: 0px 10px;
 }
+
 .testimonio:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -361,6 +423,7 @@ ul {
   height: 100%;
   background-color: #d3af9a;
 }
+
 .testimonio img {
   width: 76px;
   height: 76px;
@@ -368,21 +431,25 @@ ul {
   object-fit: cover;
   flex-shrink: 0;
 }
+
 .testimonio h4 {
   font-size: 16px;
   color: #4b2e1f;
   margin-bottom: 6px;
 }
+
 .testimonio p {
   font-size: 14px;
   color: #6b5546;
   font-style: italic;
 }
+
 .pie-pagina {
   background: #3b2a20;
   color: #f5efe6;
   padding: 40px 24px;
 }
+
 .pie-interno {
   display: flex;
   justify-content: space-between;
@@ -390,16 +457,19 @@ ul {
   flex-wrap: wrap;
   gap: 18px;
 }
+
 .pie-marca {
   font-size: 14px;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   opacity: .85;
 }
+
 .pie-redes {
   display: flex;
   gap: 14px;
   font-size: 20px;
 }
+
 .pie-redes a {
   width: 36px;
   height: 36px;
@@ -409,152 +479,205 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
 .botones-pie {
   display: flex;
   gap: 10px;
 }
+
 #menu {
   padding: 60px 24px;
 }
-/* --- BREAKPOINTS DE MEJORA RESPONSIVA --- */
+
 @media (max-width: 1200px) {
   .rejilla-caracteristicas {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
+
   .caracteristica:nth-child(2)::after {
-    display: none; /* Quitamos la línea del segundo elemento al dividirse en 2x2 */
+    display: none;
   }
+
   .testimonios {
     grid-template-columns: 1fr 1fr;
   }
+
   .testimonio:nth-child(2)::after {
     display: none;
   }
 }
+
 @media (max-width: 1024px) {
-  
-  /* 1. SECCIÓN INICIO (HERO) CENTRADA */
+
+
   .contenido-inicio {
     text-align: center;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
   }
+
   .botones-inicio {
-    justify-content: center; 
+    justify-content: center;
   }
 
-  /* 2. SECCIÓN VISITA IZQUIERDA CENTRADA */
+
   .visita-izquierda {
     text-align: center;
   }
+
   .visita-izquierda p {
     margin-left: auto;
     margin-right: auto;
   }
+
   .botones-visita {
     justify-content: center;
   }
 
-  /* 3. SECCIÓN BANNER CENTRADA */
+
   .banner {
     text-align: center;
   }
+
   .banner p {
     margin-left: auto;
     margin-right: auto;
   }
 }
+
 @media (max-width: 960px) {
-  /* 1. Ocultamos el logo por completo */
+
   .logotipo {
     display: none;
   }
 
-  /* 2. Hacemos que la lista de enlaces ocupe todo el espacio y se centre */
+
   .enlaces-nav {
-    display: flex;           /* Nos aseguramos de que sigan visibles */
-    margin-left: 0;          /* Quitamos el empuje automático a la derecha */
-    width: 100%;             /* Obligamos a la lista a abarcar todo el ancho del nav */
-    justify-content: center; /* Centramos los links perfectamente */
-    flex-wrap: wrap;         /* Si la pantalla es muy pequeña (móviles), bajan solos sin romperse */
-    gap: 20px;               /* Reducimos el espacio (de 32px a 20px) para que quepan mejor */
+    display: flex;
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
-  /* 3. Ajuste sutil de tamaño para que convivan bien en horizontal */
+
   .enlaces-nav a {
-    font-size: 16px;         /* Bajamos de 20px a 16px para optimizar espacio en móviles */
+    font-size: 16px;
   }
 
-  /* --- El resto de tus estilos responsivos de 960px se quedan exactamente igual --- */
-  .dividido { grid-template-columns: 1fr; }
-  .dividido-oscuro { grid-template-columns: 1fr; }
-  .imagen-dividida { height: 320px; }
-  .visita { grid-template-columns: 1fr; gap: 50px; }
-  .galeria { grid-template-columns: repeat(2, 1fr); }
-  .testimonios { grid-template-columns: 1fr; gap: 40px; }
-  .pie-interno { justify-content: center; text-align: center; flex-direction: column; }
-  .caracteristica { border-bottom: 1px solid #e5dccd; padding-bottom: 30px; }
-  .caracteristica:nth-last-child(-n+2) { border-bottom: none; padding-bottom: 0; }
-  .caracteristica::after, .testimonio::after { display: none !important; }
+
+  .dividido {
+    grid-template-columns: 1fr;
+  }
+
+  .dividido-oscuro {
+    grid-template-columns: 1fr;
+  }
+
+  .imagen-dividida {
+    height: 320px;
+  }
+
+  .visita {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonios {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .pie-interno {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .caracteristica {
+    border-bottom: 1px solid #e5dccd;
+    padding-bottom: 30px;
+  }
+
+  .caracteristica:nth-last-child(-n+2) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .caracteristica::after,
+  .testimonio::after {
+    display: none !important;
+  }
 
   .visita-izquierda {
     text-align: center;
   }
 
-  /* 2. Centramos el bloque del párrafo obligándolo a repartir los márgenes */
+
   .visita-izquierda p {
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* 3. Centramos los botones dentro del contenedor Flexbox */
+
   .botones-visita {
     justify-content: center;
   }
+
   .contenido-inicio {
     text-align: center;
-    /* Reseteamos el margin-left con clamp original y centramos la caja */
-    margin-left: auto; 
+
+    margin-left: auto;
     margin-right: auto;
   }
 
   .botones-inicio {
-    /* Centramos los dos botones principales ("Ver menú" y "Reservar") */
-    justify-content: center; 
+
+    justify-content: center;
   }
 
 
-  /* ==========================================================================
-     NUEVO: CENTRAR SECCIÓN BANNER
-     ========================================================================== */
+
+
   .banner {
     text-align: center;
   }
 
   .banner p {
-    /* Como el párrafo tiene max-width: 423px, esto centra la caja del texto */
+
     margin-left: auto;
     margin-right: auto;
   }
 }
+
 @media (max-width: 480px) {
+
   .rejilla-caracteristicas,
   .galeria {
-    grid-template-columns: 1fr; /* Cuadrículas en una sola columna para móviles pequeños */
+    grid-template-columns: 1fr;
   }
+
   .caracteristica {
     border-bottom: 1px solid #e5dccd;
     padding-bottom: 30px;
   }
+
   .caracteristica:last-child {
     border-bottom: none;
   }
+
   .botones-inicio,
   .botones-visita {
     flex-direction: column;
     width: 100%;
   }
+
   .btn {
     text-align: center;
     width: 100%;
