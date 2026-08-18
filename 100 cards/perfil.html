@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Perfil de Usuario</title>
 </head>
-
 <body>
 
     <header>
@@ -45,8 +43,16 @@
                 </div>
                 <div class="info">
                     <h1 class="nombre">👤 Nombre: ${usuario.name.first} ${usuario.name.last}</h1>
+                    <p class="detalle">📞 Telefono: ${usuario.phone}</p>
+                    <p class="detalle">✉️ Email: ${usuario.email}</p>
                     <p class="detalle">⚥ Sexo: ${usuario.gender}</p>
-                    <p class="detalle">🔢 Edad: ${usuario.dob.age} años</p>
+                    <p class="detalle">🔢 Edad: ${usuario.dob.age} anos</p>
+                    <p class="detalle">
+                        📍 Ubicacion: 
+                        <a id="ubicacion-link" href="https://www.google.com/maps/search/?api=1&query=${usuario.location.coordinates.latitude},${usuario.location.coordinates.longitude}" target="_blank">
+                            ${usuario.location.city}, ${usuario.location.country}
+                        </a>
+                    </p>
                     <a href="index.html" id="btn-limpiar" class="btn-volver">Volver a la Lista</a>
                 </div>
             `;
@@ -57,5 +63,4 @@
         });
     </script>
 </body>
-
 </html>
