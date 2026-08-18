@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #202122;
+    --text-color: #f8fafc;
+    --border-color: #334155;
+    --hover-color: #38bdf8;
+    --hover-text-color: #0f172a;
+    --background-card: #413e43;
+}
+
+body {
+    font-family: 'Segoe UI';
+    background: var(--primary-color);
+    min-height: 100vh;
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 15px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--background-card);
+}
+
+nav a:hover {
+    background: var(--hover-color);
+    color: var(--hover-text-color);
+}
+
+.cardcontainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-card);
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    padding: 24px;
+    gap: 15px;
+    width: 280px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.star-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: #94a3b8;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.star-btn.active {
+    color: #f59e0b;
+}
+
+.img-container {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--text-color);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+
+.nombre {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.detalle {
+    font-size: 0.95rem;
+    color: var(--text-color);
+}
+
+#ubicacion-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+#ubicacion-link:hover {
+    background-color: var(--hover-color);
+    color: var(--hover-text-color);
+}
+
+.single-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.card-perfil {
+    display: flex;
+    flex-direction: row;
+    background: var(--background-card);
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+    padding: 30px;
+    gap: 30px;
+    width: 100%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+    align-items: center;
+}
+
+.card-perfil .img-container {
+    width: 180px;
+    height: 180px;
+}
+
+.btn-volver {
+    margin-top: 10px;
+    background: var(--border-color);
+    color: var(--text-color);
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.btn-volver:hover {
+    background: var(--hover-color);
+    color: var(--hover-text-color);
+}

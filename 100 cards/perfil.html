@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Perfil de Usuario</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Perfil de Usuario</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="favoritos.html">Favoritos</a>
+        </nav>
+    </header>
+
+    <div class="single-container">
+        <div class="card-perfil" id="perfil-card"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const perfilCard = document.getElementById("perfil-card");
+            const usuarioJSON = localStorage.getItem("usuarioPerfil");
+
+            if (!usuarioJSON) {
+                perfilCard.innerHTML = `
+                    <div class="info">
+                        <p class="detalle">No se ha seleccionado ningun usuario.</p>
+                        <a href="index.html" class="btn-volver">Volver al inicio</a>
+                    </div>
+                `;
+                return;
+            }
+
+            const usuario = JSON.parse(usuarioJSON);
+
+            perfilCard.innerHTML = `
+                <div class="img-container">
+                    <img class="avatar" src="${usuario.picture.large}" alt="Avatar">
+                </div>
+                <div class="info">
+                    <h1 class="nombre">👤 Nombre: ${usuario.name.first} ${usuario.name.last}</h1>
+                    <p class="detalle">⚥ Sexo: ${usuario.gender}</p>
+                    <p class="detalle">🔢 Edad: ${usuario.dob.age} años</p>
+                    <a href="index.html" id="btn-limpiar" class="btn-volver">Volver a la Lista</a>
+                </div>
+            `;
+
+            document.getElementById("btn-limpiar").addEventListener("click", () => {
+                localStorage.removeItem("usuarioPerfil");
+            });
+        });
+    </script>
+</body>
+
+</html>

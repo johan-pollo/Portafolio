@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Favoritos</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Usuarios Favoritos</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="favoritos.html">Favoritos</a>
+        </nav>
+    </header>
+
+    <div class="cardcontainer" id="fav-container"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.getElementById("fav-container");
+            let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+            function renderFavoritos() {
+                container.innerHTML = "";
+
+                if (favoritos.length === 0) {
+                    container.innerHTML = `<p class="detalle">No hay usuarios guardados en favoritos.</p>`;
+                    return;
+                }
+
+                favoritos.forEach((usuario) => {
+                    const card = document.createElement("div");
+                    card.classList.add("card");
+
+                    card.innerHTML = `
+                        <button class="star-btn active">★</button>
+                        <div class="img-container">
+                            <img class="avatar" src="${usuario.picture.large}" alt="Avatar">
+                        </div>
+                        <div class="info">
+                            <h2 class="nombre">👤 ${usuario.name.first} ${usuario.name.last}</h2>
+                            <p class="detalle">⚥ Genero: ${usuario.gender}</p>
+                            <p class="detalle">🔢 Edad: ${usuario.dob.age} años</p>
+                        </div>
+                    `;
+
+
+                    card.addEventListener("click", (e) => {
+                        if (e.target.classList.contains("star-btn")) return;
+                        localStorage.setItem("usuarioPerfil", JSON.stringify(usuario));
+                        window.location.href = "perfil.html";
+                    });
+
+
+                    const starBtn = card.querySelector(".star-btn");
+                    starBtn.addEventListener("click", (e) => {
+                        
+
+                        favoritos = favoritos.filter(fav => fav.login.uuid !== usuario.login.uuid);
+
+                        if (favoritos.length === 0) {
+                            localStorage.removeItem("favoritos");
+                        } else {
+                            localStorage.setItem("favoritos", JSON.stringify(favoritos));
+                        }
+
+                        renderFavoritos();
+                    });
+
+                    container.appendChild(card);
+                });
+            }
+
+            renderFavoritos();
+        });
+    </script>
+</body>
+
+</html>
