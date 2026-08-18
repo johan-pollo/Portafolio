@@ -135,8 +135,7 @@ nav a:hover {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 600;
-    padding: 4px 10px;
-    border-radius: 6px;
+    padding: 4px 0px;
 }
 
 #ubicacion-link:hover {
